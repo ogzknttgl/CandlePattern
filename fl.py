@@ -42,7 +42,6 @@ class Ratio(Resource):
         ratio_red = (r / (r + g)) * 100
         return {'pattern_saw': pattern_saw, 'green_num': green_num, 'red_num': red_num,
                 'ratio_green': ratio_green, 'ratio_red': ratio_red}, 200
-    pass
 
 api.add_resource(Ratio, '/Ratio')
 
